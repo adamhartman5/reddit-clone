@@ -16,6 +16,7 @@ const SignUp: React.FC = () => {
 	const [error, setError] = useState('');
 	const [createUserWithEmailAndPassword, user, loading, userError] =
 		useCreateUserWithEmailAndPassword(auth);
+	
 
 	// Firebase logic
 	const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
